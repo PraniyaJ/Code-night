@@ -1,0 +1,142 @@
+.messages-page {
+  width: 100%;
+  max-width: 800px;
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+}
+
+.messages-header {
+  background: white;
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.messages-header h1 {
+  margin: 0;
+  color: #333;
+  font-size: 20px;
+}
+
+.volunteer-status {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-dot.online {
+  background: #28a745;
+}
+
+.messages-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.messages-list {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.message {
+  display: flex;
+  max-width: 70%;
+}
+
+.message.sent {
+  align-self: flex-end;
+}
+
+.message.received {
+  align-self: flex-start;
+}
+
+.message-content {
+  padding: 12px 16px;
+  border-radius: 18px;
+  position: relative;
+}
+
+.message.sent .message-content {
+  background: #e63946;
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.message.received .message-content {
+  background: #f1f3f6;
+  color: #333;
+  border-bottom-left-radius: 4px;
+}
+
+.message-content p {
+  margin: 0 0 5px 0;
+  line-height: 1.4;
+}
+
+.timestamp {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.message-input-container {
+  padding: 20px;
+  border-top: 1px solid #eee;
+  display: flex;
+  gap: 10px;
+}
+
+.message-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+}
+
+.message-input:focus {
+  border-color: #e63946;
+}
+
+.send-button {
+  padding: 12px 20px;
+  background: #e63946;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.send-button:hover:not(:disabled) {
+  background: #d62828;
+}
+
+.send-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

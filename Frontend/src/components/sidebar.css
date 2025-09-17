@@ -1,0 +1,70 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6f9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar {
+  width: 220px;
+  background: linear-gradient(180deg, #e63946, #f77f00);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  display: block;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.user-avatar {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-weight: 500;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
