@@ -105,3 +105,56 @@
 .delete-btn:hover {
   background: #a4161a;
 }
+
+
+/* Existing styles unchanged above */
+
+/* Table Section */
+.table-section {
+  margin-top: 30px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.guides-table {
+  width: 100%;
+  border-collapse: separate;   /* allows spacing between cells */
+  border-spacing: 0 12px;      /* vertical gap between rows */
+}
+
+.guides-table thead {
+  background: #457b9d;
+  color: #ffffff;
+  text-align: left;
+}
+
+.guides-table th,
+.guides-table td {
+  padding: 14px 18px;          /* more padding for space */
+  font-size: 15px;
+  border: none;
+}
+
+.guides-table th {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.guides-table tbody tr {
+  background: #f1faee;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.guides-table tbody tr:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Actions column */
+.guides-table td:last-child {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
