@@ -8,7 +8,7 @@ export default function Sidebar() {
       <nav>
         <ul>
           <li>
-            <NavLink to="/" end className="nav-link">
+            <NavLink to="/dashboard" end className="nav-link">
               Dashboard
             </NavLink>
           </li>
