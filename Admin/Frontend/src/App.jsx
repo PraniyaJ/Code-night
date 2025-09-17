@@ -4,6 +4,7 @@ import Dashboard from "./pages/dashboard";
 import Notifications from "./pages/notification";
 import Guides from "./pages/guide";
 import Leaderboard from "./pages/leaderboard";
+import Users from "./pages/users"
 import "./components/sidebar.css";
 import "./components/dashboard.css"; // Ensure dashboard styles are loaded
 
@@ -18,6 +19,7 @@ function App() {
             <Route path="/notifications" element={<Notifications />} />
             <Route path="/guides" element={<Guides />} />
             <Route path="/leaderboard" element={<Leaderboard />} />
+            <Route path="/users" element={<Users />} />
           </Routes>
         </div>
       </div>

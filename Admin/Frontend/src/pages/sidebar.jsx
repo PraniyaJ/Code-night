@@ -27,6 +27,11 @@ export default function Sidebar() {
               Leaderboard
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/users" className="nav-link">
+              Users
+            </NavLink>
+          </li>
         </ul>
       </nav>
       <button
