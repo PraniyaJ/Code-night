@@ -1,0 +1,87 @@
+.table-section h2 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #333;
+}
+
+.alerts-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px; /* Adds vertical spacing between rows */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.alerts-table th,
+.alerts-table td {
+  padding: 16px 24px; /* More horizontal padding */
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.alerts-table th {
+  background: #f1f3f6;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.alerts-table tr {
+  background-color: #fff;
+}
+
+.alerts-table tr:hover {
+  background: #f9fafc;
+}
+
+/* Optional: Set column widths for better distribution */
+.alerts-table th:nth-child(1),
+.alerts-table td:nth-child(1) {
+  width: 60px;
+}
+
+.alerts-table th:nth-child(2),
+.alerts-table td:nth-child(2) {
+  width: 120px;
+}
+
+.alerts-table th:nth-child(3),
+.alerts-table td:nth-child(3) {
+  width: 180px;
+}
+
+.alerts-table th:nth-child(4),
+.alerts-table td:nth-child(4) {
+  width: 180px;
+}
+
+.alerts-table th:nth-child(5),
+.alerts-table td:nth-child(5) {
+  width: 200px;
+}
+
+.alerts-table th:nth-child(6),
+.alerts-table td:nth-child(6) {
+  width: 120px;
+}
+
+/* Status badge styling */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-badge.pending {
+  background: #ffe0e0;
+  color: #d62828;
+}
+
+.status-badge.resolved {
+  background: #d8f3dc;
+  color: #2d6a4f;
+}
